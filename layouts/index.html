@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+  <main>
+      {{ range $index, $val := $.Site.RegularPages }}
+      <div class="block">
+
+      <div class="title" onclick="expandDiv({{$index}})">{{ .Title }}</div>
+      <div id="div{{$index}}" class="hidden">
+          <div class="text">
+      {{ .Content }}
+    </div>
+</div>
+</div><div class="line"></div>
+      {{ end }}
+  </main>
+{{ end }}

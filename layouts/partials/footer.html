@@ -1,0 +1,14 @@
+<div class="block footer">
+    <div><a href="#">Terms & Conditions</a></div>
+    <div>&copy;{{ $.Site.Title }}</div>
+  </div>
+  <script>
+    function expandDiv(divNum) {
+        var div = document.getElementById("div" + divNum);
+        if (div.className === "hidden") {
+            div.className = "expand";
+        } else {
+            div.className = "hidden";
+        }
+    }
+</script>
