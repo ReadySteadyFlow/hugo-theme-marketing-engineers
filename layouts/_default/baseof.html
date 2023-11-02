@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ site.LanguageCode }}">
-  <head>
-    {{ $style := resources.Get "css/styles.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css" media="all" />    
+  <head>   
     {{ partial "head.html" . }}
   </head>
   <body>
