@@ -149,6 +149,7 @@ h2 {
     cursor: pointer;
     padding: 20px;
     text-align: center;
+    font-family: 'Poppins';
 }
 
 h1,
@@ -159,6 +160,13 @@ h2 {
 
 h2 {
     font-size: 15px;
+}
+
+h1.main-title {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 300;
+    padding: 0;
 }
 
 .text {
