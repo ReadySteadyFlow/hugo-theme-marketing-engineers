@@ -1,44 +1,29 @@
-/* poppins-300 - latin */
+/* poppins-300 - latin-ext */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 300;
-    src: url('/fonts/poppins-v20-latin-300.eot');
-    /* IE9 Compat Modes */
-    src: url('/fonts/poppins-v20-latin-300.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */
-        url('/fonts/poppins-v20-latin-300.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('/fonts/poppins-v20-latin-300.woff') format('woff'),
-        /* Modern Browsers */
-        url('/fonts/poppins-v20-latin-300.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('/fonts/poppins-v20-latin-300.svg#Poppins') format('svg');
-    /* Legacy iOS */
-}
-
-/* poppins-regular - latin */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('/fonts/poppins-v20-latin-ext-300.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/poppins-v20-latin-ext-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/poppins-v20-latin-ext-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('/fonts/poppins-v20-latin-ext-300.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('/fonts/poppins-v20-latin-ext-300.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('/fonts/poppins-v20-latin-ext-300.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
+  /* poppins-regular - latin-ext */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/poppins-v20-latin-regular.eot');
-    /* IE9 Compat Modes */
-    src: url('/fonts/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */
-        url('/fonts/poppins-v20-latin-regular.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('/fonts/poppins-v20-latin-regular.woff') format('woff'),
-        /* Modern Browsers */
-        url('/fonts/poppins-v20-latin-regular.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('/fonts/poppins-v20-latin-regular.svg#Poppins') format('svg');
-    /* Legacy iOS */
-}
+    src: url('/fonts/poppins-v20-latin-ext-regular.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/poppins-v20-latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/poppins-v20-latin-ext-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('/fonts/poppins-v20-latin-ext-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('/fonts/poppins-v20-latin-ext-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('/fonts/poppins-v20-latin-ext-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
 
 html {
     width: 100%;
@@ -76,8 +61,12 @@ p {
 .container {
     display: block;
     margin: 40px auto;
-    padding: 0 20px;
+    padding-bottom: 40px;
     text-align: center;
+}
+
+main{
+    padding: 0 20px;
 }
 
 .block {
@@ -86,7 +75,7 @@ p {
     border: 3px solid #303030;
     box-shadow: 8px 8px #474747;
     width: 100%;
-    max-width: 450px;
+    max-width: 550px;
     vertical-align: top;
     text-align: left;
     overflow: hidden;
@@ -135,6 +124,35 @@ p {
 .tagline {
     font-size: 16px;
     font-weight: 400;
+}
+
+.nav {
+    overflow: hidden;
+}
+
+.nav .item {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.nav .line {
+    height: 20px;
+    padding: 90px 0 90px;
+    margin: -90px auto -90px;
+}
+
+.nav .block {
+    background-color: #4A5354;
+    position: relative;
+}
+
+.nav .block:hover {
+    background-color: #E9B44C;
+}
+
+.nav .title{
+    padding: 10px;
+    color: #fff;
 }
 
 .bump {
@@ -194,7 +212,7 @@ img {
 
 .col {
     display: inline-block;
-    width: 200px;
+    width: 250px;
     vertical-align: top;
 }
 
@@ -204,8 +222,12 @@ img {
     padding-bottom: 20px;
 }
 
+.teamname {
+    display: inline;
+    border-bottom: 1px solid;
+}
+
 .teamfunction {
-    text-decoration: overline;
     margin-bottom: 8px;
 }
 
@@ -243,7 +265,6 @@ button {
     height: 37px;
     text-align: center;
     border: 3px solid #303030;
-    transition: all 500ms;
 }
 
 button:hover {
