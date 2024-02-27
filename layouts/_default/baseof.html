@@ -2,7 +2,7 @@
 <html lang="{{ site.LanguageCode }}">
   <head>
     {{ $style := resources.Get "css/styles.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css" media="all" />    
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" type="text/css" media="all" />    
     {{ partial "head.html" . }}
   </head>
   <body>
