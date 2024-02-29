@@ -308,3 +308,11 @@ button:active {
     width: 200px;
     padding: 20px 0;
 }
+
+.footnote {
+    font-size: 12px;
+    padding: 5px 0;
+    color: #909090;
+}
+
+.grecaptcha-badge { visibility: hidden; }
