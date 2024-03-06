@@ -55,7 +55,8 @@ a:hover {
 }
 
 p {
-    margin: 0 0 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .container {
@@ -73,7 +74,7 @@ main{
     margin: 0 auto;
     background-color: #F8F8FF;
     border: 3px solid #303030;
-    box-shadow: 8px 8px #474747;
+    box-shadow: 8px 8px grey;
     width: 100%;
     max-width: 550px;
     vertical-align: top;
@@ -86,10 +87,10 @@ main{
 }
 
 .line {
-    height: 40px;
+    height: 20px;
     width: 3px;
-    padding: 0 0 20px;
-    margin: 0 auto -20px;
+    padding: 0 0 10px;
+    margin: 0 auto -10px;
     border-right: 3px solid #303030;
 }
 
@@ -104,8 +105,9 @@ main{
 .logo {
     font-size: 36px;
     line-height: 36px;
-    width: 180px;
+    max-width: 510px;
     padding: 20px;
+    text-align: center;
 }
 
 .logo a,
@@ -188,7 +190,7 @@ h1.main-title {
 }
 
 .text {
-    padding: 0 20px 0;
+    padding: 0 20px 20px;
     text-align: justify;
 }
 
