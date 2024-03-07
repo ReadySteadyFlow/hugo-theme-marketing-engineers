@@ -109,6 +109,11 @@ main{
     text-align: center;
 }
 
+.logo .block {
+    max-width: 220px;
+    padding: 20px 0 10px;
+}
+
 .logo a,
 .logo a:visited,
 .logo a:focus {
